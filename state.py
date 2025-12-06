@@ -7,4 +7,5 @@ from dataclasses import dataclass
 
 @dataclass
 class State:
-    pass
+    energy_used: int
+    count: int
