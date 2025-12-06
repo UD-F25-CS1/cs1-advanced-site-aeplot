@@ -34,8 +34,8 @@ def ready_or_not(state:State):
 def about(state:State):
     return Page(state, [
         Header('⚡️ About ⚡️',4),
-        '''This game is centered around AI and internet use and the environmental impacts of when we use it./n
-        If we can spread awareness about these impacts, maybe then we can come together to take action as a whole.''',
+        '''This game is centered around AI and internet use and the environmental impacts of when we use it.''',
+        '''If we can spread awareness about these impacts, maybe then we can come together to take action as a whole.''',
 
         'Resources:',
         'https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117',
