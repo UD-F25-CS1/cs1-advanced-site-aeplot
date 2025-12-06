@@ -8,8 +8,8 @@ from state import State
 messages = [
     '''You need help with your computer science project.''',
     '''Oh no! Your cactus looks unhappy, and you're not sure what to do.''',
-    '''''',
-    '''''',
+    '''You are working on a paper, but you forgot where you got your information! What do you do?''',
+    '''You need to make a dessert for the upcoming holiday party, but you can't decide what to make.''',
 ]
 
 @route
@@ -59,7 +59,7 @@ def main_game(state:State):
 def ai_points(state:State):
     state.energy_used += 5
     state.count += 1
-    if state.count >= 4:
+    if state.count > 3:
         return check_points(state)
     else:
         return main_game(state)
