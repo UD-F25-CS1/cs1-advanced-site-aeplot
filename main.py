@@ -15,6 +15,7 @@ messages = [
 @route
 def index(state: State) -> Page:
     state.count = 0
+    state.energy_used = 0
     return Page(state, [
         Header('⚡️ Energy Simulator ⚡️',4),
         Button('''Start''',url = '/main_game'),
